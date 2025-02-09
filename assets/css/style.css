@@ -1,5 +1,5 @@
 /* ==========================
-   🌟 General Styles
+   * General Styles
    ========================== */
 body {
     font-family: Arial, sans-serif;
@@ -10,7 +10,7 @@ body {
 }
 
 /* ==========================
-   🌟 Header & Navigation
+   * Header & Navigation
    ========================== */
 header {
     text-align: center;
@@ -55,7 +55,7 @@ nav ul li a:hover {
 }
 
 /* ==========================
-   🌟 Main Content
+   * Main Content
    ========================== */
 main {
     max-width: 1100px;
@@ -65,7 +65,7 @@ main {
 }
 
 /* ==========================
-   🌟 Book Section
+   * Book Section
    ========================== */
 #books {
     margin-top: 30px;
@@ -127,7 +127,7 @@ main {
 }
 
 /* ==========================
-   🌟 Contact Section
+   * Contact Section
    ========================== */
 #contact {
     margin-top: 30px;
@@ -139,7 +139,7 @@ main {
 }
 
 /* ==========================
-   🌟 Footer
+   * Footer
    ========================== */
 footer {
     text-align: center;
@@ -150,7 +150,7 @@ footer {
 }
 
 /* ==========================
-   🌟 Mobile Responsiveness
+   * Mobile Responsiveness
    ========================== */
 @media (max-width: 768px) {
     .book-list {
