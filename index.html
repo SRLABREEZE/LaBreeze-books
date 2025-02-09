@@ -4,61 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaBreeze Books</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header class="main-header">
-        <img src="assets/images/labreeze-logo.png" alt="LaBreeze Books Logo" class="logo">
+    <header>
+        <div class="banner">
+            <img src="./assets/images/banner.jpg" alt="Welcome to LaBreeze Books">
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#featured-books">Books</a></li>
+                <li><a href="#books">Books</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="banner" class="banner">
-        <img src="assets/images/banner.png" alt="Welcome to LaBreeze Books">
-        <h1>Welcome to LaBreeze Books</h1>
-        <p>Explore stories that inspire, entertain, and captivate.</p>
-    </section>
-
-    <section id="featured-books" class="featured-books">
-        <h2>Featured Books</h2>
-        <div class="book">
-            <img src="assets/images/keep-it-playa.jpg" alt="Keep It Playa">
-            <h3>Keep It Playa</h3>
-            <p>Available Now</p>
-            <a href="https://play.google.com/store/books" class="btn">Buy Now</a>
-        </div>
-        <div class="book">
-            <img src="assets/images/project-nova.jpg" alt="Project Nova">
-            <h3>Project Nova: The Awakening</h3>
-            <p>Coming Soon</p>
-            <span class="btn disabled">Not Yet Released</span>
-        </div>
-        <div class="book">
-            <img src="assets/images/spelman-high.jpg" alt="Spelman High">
-            <h3>Spelman High: Lost Origins</h3>
-            <p>Coming Soon</p>
-            <span class="btn disabled">Not Yet Released</span>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>Writing has always been my way of capturing life—the struggles, the wins, and everything in between...</p>
-    </section>
-
+    <main>
+        <section id="about">
+            <h1>Welcome to LaBreeze Books</h1>
+            <p>Writing has always been my way of capturing life...</p>
+        </section>
+        <section id="books">
+            <h2>Books</h2>
+            <div class="book-list">
+                <div class="book">
+                    <img src="./assets/images/keep-it-playa.png" alt="Keep It Playa">
+                    <h3>Keep It Playa</h3>
+                    <p>Available Now!</p>
+                </div>
+                <div class="book">
+                    <img src="./assets/images/project-nova-placeholder.png" alt="Project Nova">
+                    <h3>Project Nova</h3>
+                    <p>Coming Soon</p>
+                </div>
+                <div class="book">
+                    <img src="./assets/images/spelman-high-placeholder.png" alt="Spelman High">
+                    <h3>Spelman High</h3>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Follow me on social media: @srlabreeze</p>
+        </section>
+    </main>
     <footer>
-        <div class="social-media">
-            <a href="https://facebook.com/srlabreeze" target="_blank">Facebook</a>
-            <a href="https://instagram.com/srlabreeze" target="_blank">Instagram</a>
-            <a href="https://twitter.com/srlabreeze" target="_blank">Twitter/X</a>
-            <a href="https://tiktok.com/@srlabreeze" target="_blank">TikTok</a>
-        </div>
-        <p>&copy; 2025 LaBreeze Books. All rights reserved.</p>
+        <p>&copy; 2025 LaBreeze Books</p>
     </footer>
 </body>
 </html>
