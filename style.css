@@ -1,60 +1,138 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
+    box-sizing: border-box;
 }
 
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f9;
+}
+
+/* Header */
 header {
-    background: #302b63;
-    padding: 20px;
+    text-align: center;
+    background: #5a2d82;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    background: #330d50;
+    list-style: none;
+    padding: 10px;
 }
 
-.logo {
-    height: 60px;
-}
-
-nav a {
-    color: #f0a07e;
-    text-decoration: none;
+nav ul li {
     margin: 0 15px;
 }
 
-#hero {
-    background: linear-gradient(to bottom, #7b4397, #dc2430);
-    padding: 50px 20px;
-}
-
-.btn {
-    display: inline-block;
-    background: #f0a07e;
-    color: #fff;
-    padding: 10px 20px;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-weight: bold;
 }
 
-.book-list {
+nav ul li a:hover {
+    color: #ffda79;
+}
+
+/* Main Sections */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Books Section */
+.book-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .book {
+    text-align: center;
     margin: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
 .book img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
+.book h3 {
+    margin: 15px 0;
+    color: #5a2d82;
+}
+
+.book p {
+    font-size: 0.9em;
+}
+
+/* Social Links */
+.social-links a {
+    margin: 0 10px;
+    color: #5a2d82;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #ffda79;
+}
+
+/* Newsletter Section */
+form {
+    text-align: center;
+}
+
+form input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #5a2d82;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #ffda79;
+    color: #330d50;
+}
+
+/* Footer */
 footer {
-    background: #302b63;
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
+    background: #330d50;
+    color: white;
 }
