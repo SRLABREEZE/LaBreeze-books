@@ -1,138 +1,47 @@
-/* General Reset */
-body, h1, h2, h3, p, ul, li, a {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    background-color: #f8f8f8;
     color: #333;
-    background: #f4f4f9;
 }
-
-/* Header */
 header {
     text-align: center;
-    background: #5a2d82;
-    color: white;
 }
-
 .banner img {
     width: 100%;
     height: auto;
 }
-
 nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    background: #330d50;
-    list-style: none;
-    padding: 10px;
+    background-color: #333;
 }
-
 nav ul li {
     margin: 0 15px;
 }
-
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-weight: bold;
+    color: #fff;
 }
-
-nav ul li a:hover {
-    color: #ffda79;
+h1, h2 {
+    text-align: center;
 }
-
-/* Main Sections */
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-/* Books Section */
-.book-container {
+.book-list {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    padding: 20px;
 }
-
-.book {
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-
 .book img {
-    width: 100%;
+    width: 150px;
     height: auto;
-    border-radius: 8px;
 }
-
-.book h3 {
-    margin: 15px 0;
-    color: #5a2d82;
-}
-
-.book p {
-    font-size: 0.9em;
-}
-
-/* Social Links */
-.social-links a {
-    margin: 0 10px;
-    color: #5a2d82;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.social-links a:hover {
-    color: #ffda79;
-}
-
-/* Newsletter Section */
-form {
-    text-align: center;
-}
-
-form input {
-    padding: 10px;
-    width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-right: 10px;
-}
-
-form button {
-    padding: 10px 20px;
-    background: #5a2d82;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #ffda79;
-    color: #330d50;
-}
-
-/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background: #330d50;
-    color: white;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
 }
