@@ -1,7 +1,7 @@
-/* --- General Styling --- */
+/* --- General Styling (Purple & Peach UI) --- */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #4B0082, #800080); /* Purple gradient */
+    background: linear-gradient(to right, #4B0082, #FFA07A); /* Purple to Peach */
     color: white;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 
 /* --- Header Styling --- */
 header {
-    background: linear-gradient(to right, #6a0dad, #4B0082);
+    background: linear-gradient(to right, #6a0dad, #FF7F50); /* Deep Purple to Peach */
     padding: 20px;
 }
 
@@ -20,11 +20,11 @@ h1 {
     color: white;
 }
 
-/* --- Navigation Menu --- */
+/* --- Navigation Menu (Fixed to Stay Horizontal) --- */
 nav {
     display: flex;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent */
+    background: rgba(0, 0, 0, 0.3); /* Dark semi-transparent */
     padding: 10px 0;
 }
 
@@ -55,10 +55,10 @@ nav ul li a:hover {
     color: black;
 }
 
-/* --- Fix Menu Layout on Mobile --- */
+/* --- Fix Mobile Menu Layout (Keeps it Horizontal) --- */
 @media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: row; /* Ensures it stays horizontal */
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
@@ -87,7 +87,7 @@ nav ul li a:hover {
     }
 }
 
-/* --- Book & Image Styling --- */
+/* --- Book & NFT Styling (Fixed for Mobile & Desktop) --- */
 .books, .nft-gallery {
     padding: 30px;
     display: flex;
@@ -97,80 +97,46 @@ nav ul li a:hover {
 
 .book-item, .nft-item {
     text-align: center;
-    max-width: 250px;
-    margin: 15px;
+    max-width: 300px;
+    margin: 20px;
 }
 
 .book-item img, .nft-item img {
     width: 100%;
-    max-width: 200px;
+    max-width: 250px; /* Correct Desktop Size */
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-/* --- Mobile Image Fixes --- */
+/* --- Fix Mobile Image Size (Smaller on Phones) --- */
 @media screen and (max-width: 600px) {
-    .book-item, .nft-item {
-        max-width: 100%;
-        margin: 10px 0;
-    }
-
     .book-item img, .nft-item img {
-        max-width: 150px;
+        max-width: 150px; /* Shrink for mobile */
     }
 }
 
-/* --- Author Page Styling --- */
-.about-author {
-    text-align: center;
-    padding: 30px;
-}
-
-.author-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-}
-
-/* --- Contact Page Styling --- */
-.contact-form {
-    background: #222;
-    padding: 30px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
+/* --- Restore Buy Button --- */
+.buy-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    background: #FFD700;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
 }
 
-.contact-form button {
-    background: #FFD700;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.contact-form button:hover {
+.buy-button:hover {
     background: #800080;
     color: white;
 }
 
-/* --- Footer Styling --- */
+/* --- Footer Styling (Updated Social Media Links) --- */
 footer {
-    background: #6a0dad;
+    background: linear-gradient(to right, #6a0dad, #FF7F50);
     color: white;
     padding: 20px;
     margin-top: 20px;
@@ -204,20 +170,5 @@ footer p {
 @media screen and (max-width: 600px) {
     footer {
         padding: 15px;
-    }
-}
-/* --- Fix Book & NFT Image Sizes (Desktop) --- */
-.book-item img, .nft-item img {
-    width: 100%;
-    max-width: 250px; /* Corrected size */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-}
-
-/* --- Fix Mobile Image Size (Smaller on Phones) --- */
-@media screen and (max-width: 600px) {
-    .book-item img, .nft-item img {
-        max-width: 150px; /* Shrink for mobile */
     }
 }
