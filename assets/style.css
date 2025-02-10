@@ -206,3 +206,18 @@ footer p {
         padding: 15px;
     }
 }
+/* --- Fix Book & NFT Image Sizes (Desktop) --- */
+.book-item img, .nft-item img {
+    width: 100%;
+    max-width: 250px; /* Corrected size */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* --- Fix Mobile Image Size (Smaller on Phones) --- */
+@media screen and (max-width: 600px) {
+    .book-item img, .nft-item img {
+        max-width: 150px; /* Shrink for mobile */
+    }
+}
