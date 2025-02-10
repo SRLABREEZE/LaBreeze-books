@@ -5,8 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaBreeze Books</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script>
+        // Countdown Timer Script
+        function startCountdown() {
+            const releaseDate = new Date("February 16, 2025 00:00:00").getTime();
+            const timer = setInterval(function () {
+                const now = new Date().getTime();
+                const timeLeft = releaseDate - now;
+
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerHTML = 
+                    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                if (timeLeft < 0) {
+                    clearInterval(timer);
+                    document.getElementById("countdown").innerHTML = "Now Available!";
+                }
+            }, 1000);
+        }
+    </script>
 </head>
-<body>
+<body onload="startCountdown()">
     <header>
         <img src="assets/images/banner.jpg" alt="LaBreeze Books Banner" class="banner">
         <h1>Welcome to LaBreeze Books</h1>
@@ -22,25 +45,26 @@
     </header>
 
     <section>
-        <h2>📚 Featured Books</h2>
+        <h2>Featured Books</h2>
         <div class="book-list">
             <div class="book">
                 <img src="assets/images/keep-it-playa.png" alt="Keep It Playa">
                 <h3>Keep It Playa</h3>
-                <p>🔥 The highly anticipated urban romance! <br> **Drops February 16, 2025!**</p>
+                <p>The highly anticipated urban romance.<br> Drops February 16, 2025!</p>
+                <p><strong>Countdown to Release:</strong> <span id="countdown"></span></p>
                 <a href="https://play.google.com/store/books/details?id=GGKEY:ZW2G4PWQPFT" class="buy-btn">Buy on Google Play</a>
             </div>
             
             <div class="book">
                 <img src="assets/images/project-nova-placeholder.png" alt="Project Nova">
                 <h3>Project Nova</h3>
-                <p>🚀 A sci-fi thriller exploring survival and loyalty.<br> **Coming Soon!**</p>
+                <p>A sci-fi thriller exploring survival and loyalty.<br> Coming Soon!</p>
             </div>
 
             <div class="book">
                 <img src="assets/images/spelman-high-placeholder.png" alt="Spelman High">
                 <h3>Spelman High</h3>
-                <p>💖 A drama-filled romance series set in a world of ambition.<br> **Coming Soon!**</p>
+                <p>A drama-filled romance series set in a world of ambition.<br> Coming Soon!</p>
             </div>
         </div>
     </section>
