@@ -1,16 +1,16 @@
 /* --- General Styling --- */
 body {
     font-family: 'Arial', sans-serif;
-    background: #1a1a1a; /* Dark background */
-    color: #fff;
+    background: linear-gradient(to right, #4B0082, #800080); /* Purple gradient */
+    color: white;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* --- Header and Navigation --- */
+/* --- Header Styling --- */
 header {
-    background: linear-gradient(to right, #800080, #FFD700); /* Purple to Gold */
+    background: linear-gradient(to right, #6a0dad, #4B0082); /* Deep Purple */
     padding: 20px;
 }
 
@@ -21,13 +21,20 @@ h1 {
 }
 
 /* --- Navigation Menu --- */
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2); /* Transparent dark bar */
+    padding: 10px 0;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex; /* Makes menu horizontal */
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -46,36 +53,6 @@ nav ul li a:hover {
     color: black;
 }
 
-/* --- Navigation Fix for Mobile --- */
-@media screen and (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centers menu items */
-        padding: 0;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-        margin: 8px 0;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 12px;
-        width: 90%;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 5px;
-        font-size: 18px;
-    }
-
-    nav ul li a:hover {
-        background: #FFD700;
-        color: black;
-    }
-}
-
 /* --- Banner Styling --- */
 .banner {
     width: 100%;
@@ -85,18 +62,34 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-/* --- About Page Styling --- */
+/* --- Book & Image Styling --- */
+.books, .nft-gallery {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-item, .nft-item {
+    text-align: center;
+    max-width: 250px;
+    margin: 15px;
+}
+
+.book-item img, .nft-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* --- Author Page Styling --- */
 .about-author {
     text-align: center;
     padding: 30px;
 }
 
-.about-author h2 {
-    font-size: 26px;
-    margin-bottom: 15px;
-}
-
-/* --- Author Image Styling --- */
 .author-image {
     width: 100%;
     max-width: 300px;
@@ -106,16 +99,41 @@ nav ul li a:hover {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive Fix for Smaller Screens */
-@media screen and (max-width: 600px) {
-    .author-image {
-        max-width: 200px;
-    }
+/* --- Contact Page Styling --- */
+.contact-form {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #FFD700;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: #800080;
+    color: white;
 }
 
 /* --- Footer Styling --- */
 footer {
-    background: #800080;
+    background: #6a0dad;
     color: white;
     padding: 20px;
     margin-top: 20px;
@@ -145,104 +163,18 @@ footer p {
     color: #fff;
 }
 
-/* --- Book Section Styling --- */
-.books {
-    padding: 30px;
-}
-
-.book-item {
-    display: inline-block;
-    margin: 20px;
-    text-align: center;
-    max-width: 250px;
-}
-
-.book-item img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-}
-
-.book-item h3 {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-/* --- NFTs Page Styling --- */
-.nft-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.nft-item {
-    margin: 15px;
-    text-align: center;
-    max-width: 250px;
-}
-
-.nft-item img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-}
-
-.nft-item h3 {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-/* --- Contact Page Styling --- */
-.contact-form {
-    background: #222;
-    padding: 30px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background: #FFD700;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.contact-form button:hover {
-    background: #800080;
-    color: white;
-}
-
 /* --- Responsive Adjustments --- */
 @media screen and (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
+    nav ul {
+        flex-direction: row; /* Forces horizontal layout */
+        justify-content: center;
     }
 
     .banner {
         max-height: 200px;
     }
 
-    .book-item,
-    .nft-item {
+    .book-item, .nft-item {
         max-width: 100%;
     }
 }
