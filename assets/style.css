@@ -1,42 +1,123 @@
-/* --- Fix Banner Size (Desktop & Mobile) --- */
+/* --- GENERAL STYLES --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #4B0082, #2E0854); /* Deep Purple Gradient */
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* --- NAVIGATION BAR (FIXED POSITION) --- */
+.navbar {
+    background: rgba(75, 0, 130, 0.95); /* Dark Purple */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3); /* Soft Gold Glow */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FFD700; /* Gold Hover Effect */
+}
+
+/* --- BANNER IMAGE --- */
+.banner-container {
+    margin-top: 80px; /* Prevents overlap with navbar */
+}
+
 .banner {
     width: 100%;
-    max-height: 350px; 
+    max-height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-/* --- Books & NFTs: Matching Grid Layout & Image Sizes --- */
+/* --- BOOK & NFT GRID SYSTEM (MATCHING SIZES) --- */
 .books, .nft-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    gap: 20px; /* Ensures even spacing between items */
+    gap: 20px;
 }
 
+/* --- BOOK & NFT ITEM FIX (FOR MOBILE & DESKTOP) --- */
 .book-item, .nft-item {
     text-align: center;
-    width: 250px; /* Standardized width for uniformity */
-    margin: 15px;
+    width: 180px; /* Uniform Width */
+    margin: 10px;
 }
 
 .book-item img, .nft-item img {
     width: 100%;
-    max-width: 220px; /* Matches NFT page */
+    max-width: 160px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.3); /* Gold Glow */
 }
 
-/* --- Mobile Fix for Smaller Screens --- */
+/* --- BUTTON STYLING (BUY BUTTON) --- */
+.buy-button {
+    background-color: #FFD700; /* Gold */
+    color: #4B0082; /* Deep Purple */
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #FFA500; /* Orange-Gold */
+}
+
+/* --- FOOTER DESIGN FIX --- */
+.footer {
+    background: rgba(75, 0, 130, 0.9);
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #FFD700;
+}
+
+/* --- MOBILE FIXES (ENSURING IMAGES & NAVBAR ARE RESPONSIVE) --- */
 @media screen and (max-width: 600px) {
     .book-item, .nft-item {
-        width: 150px; /* Smaller size for mobile */
+        width: 130px; /* Smaller Width for Mobile */
     }
 
     .book-item img, .nft-item img {
-        max-width: 140px; /* Adjust image size on smaller screens */
+        max-width: 120px; /* Ensuring Smaller Book Covers */
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
     }
 }
