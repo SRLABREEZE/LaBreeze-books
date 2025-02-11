@@ -1,90 +1,42 @@
-/* --- General Website Styling (Purple & Grey Theme) --- */
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #4B0082, #808080); /* Purple to Grey Gradient */
-    color: white;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-/* --- Navbar Styling (Fixing Colors & Layout) --- */
-.navbar {
-    background-color: rgba(75, 0, 130, 0.9); /* Purple */
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-}
-
-.navbar a:hover {
-    color: #FFD700; /* Gold Hover Effect */
-}
-
-/* --- Banner Styling --- */
+/* --- Fix Banner Size (Desktop & Mobile) --- */
 .banner {
     width: 100%;
-    max-height: 350px;
+    max-height: 350px; 
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
-/* --- Books & NFTs Styling --- */
+/* --- Books & NFTs: Matching Grid Layout & Image Sizes --- */
 .books, .nft-gallery {
-    padding: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px; /* Ensures even spacing between items */
 }
 
 .book-item, .nft-item {
     text-align: center;
-    max-width: 300px;
-    margin: 20px;
+    width: 250px; /* Standardized width for uniformity */
+    margin: 15px;
 }
 
 .book-item img, .nft-item img {
     width: 100%;
-    max-width: 250px;
+    max-width: 220px; /* Matches NFT page */
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-/* --- Mobile Responsive Fixes --- */
+/* --- Mobile Fix for Smaller Screens --- */
 @media screen and (max-width: 600px) {
+    .book-item, .nft-item {
+        width: 150px; /* Smaller size for mobile */
+    }
+
     .book-item img, .nft-item img {
-        max-width: 120px;
-        height: auto;
+        max-width: 140px; /* Adjust image size on smaller screens */
     }
-    
-    .banner {
-        max-height: 250px;
-    }
-}
-
-/* --- Footer Styling (Purple Footer) --- */
-.footer {
-    background-color: rgba(75, 0, 130, 0.9);
-    padding: 15px;
-    margin-top: 20px;
-}
-
-.footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer a:hover {
-    color: #FFD700;
 }
