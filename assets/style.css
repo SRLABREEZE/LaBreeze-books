@@ -1,75 +1,32 @@
-/* --- General Styling (Purple & Peach UI) --- */
+/* --- General Website Styling (Purple & Grey Theme) --- */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #4B0082, #FFA07A); /* Purple to Peach */
+    background: linear-gradient(to bottom, #4B0082, #808080); /* Purple to Grey Gradient */
     color: white;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* --- Header Styling --- */
-header {
-    background: linear-gradient(to right, #6a0dad, #FF7F50); /* Deep Purple to Peach */
-    padding: 20px;
+/* --- Navbar Styling (Fixing Colors & Layout) --- */
+.navbar {
+    background-color: rgba(75, 0, 130, 0.9); /* Purple */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 32px;
+.navbar a {
     color: white;
-}
-
-/* --- Navigation Menu (Fixed to Stay Horizontal) --- */
-nav {
-    display: flex;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.3); /* Dark semi-transparent */
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 5px 15px;
-}
-
-nav ul li a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
     font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s;
+    font-weight: bold;
+    padding: 10px;
 }
 
-nav ul li a:hover {
-    background: #FFD700;
-    color: black;
-}
-
-/* --- Fix Mobile Menu Layout (Keeps it Horizontal) --- */
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    nav ul li {
-        margin: 5px;
-    }
-
-    nav ul li a {
-        font-size: 14px;
-        padding: 6px 10px;
-    }
+.navbar a:hover {
+    color: #FFD700; /* Gold Hover Effect */
 }
 
 /* --- Banner Styling --- */
@@ -78,15 +35,10 @@ nav ul li a:hover {
     max-height: 350px;
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-/* --- Fix Banner on Mobile --- */
-@media screen and (max-width: 600px) {
-    .banner {
-        max-height: 250px;
-    }
-}
-/* --- Book & NFT Styling (Fixed for Mobile & Desktop) --- */
+/* --- Books & NFTs Styling --- */
 .books, .nft-gallery {
     padding: 30px;
     display: flex;
@@ -102,141 +54,37 @@ nav ul li a:hover {
 
 .book-item img, .nft-item img {
     width: 100%;
-    max-width: 250px; /* Desktop Size */
+    max-width: 250px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-/* --- Fix Banner Size (Desktop & Mobile) --- */
-.banner {
-    width: 100%;
-    max-height: 350px; /* Adjusted for better display */
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* --- Mobile Fix for Banner --- */
-@media screen and (max-width: 600px) {
-    .banner {
-        max-height: 250px;
-    }
-}
-
-/* --- Book & NFT Image Fix (Desktop & Mobile) --- */
-.books, .nft-gallery {
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.book-item, .nft-item {
-    text-align: center;
-    max-width: 300px;
-    margin: 20px;
-}
-
-/* --- Image Fix for Desktop --- */
-.book-item img, .nft-item img {
-    width: 100%;
-    max-width: 250px; /* Desktop Size */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-}
-
-/* --- Auto Resize Images for Mobile (Fixes Oversized Books) --- */
+/* --- Mobile Responsive Fixes --- */
 @media screen and (max-width: 600px) {
     .book-item img, .nft-item img {
-        max-width: 120px; /* Shrink for mobile */
+        max-width: 120px;
         height: auto;
     }
-}
-    }
-}
-/* --- Book & NFT Styling (Fixed for Mobile & Desktop) --- */
-.books, .nft-gallery {
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.book-item, .nft-item {
-    text-align: center;
-    max-width: 300px;
-    margin: 20px;
-}
-
-.book-item img, .nft-item img {
-    width: 100%;
-    max-width: 250px; /* Correct Desktop Size */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-}
-
-/* --- Fix Mobile Image Size (Smaller on Phones) --- */
-@media screen and (max-width: 600px) {
-    .book-item img, .nft-item img {
-        max-width: 150px; /* Shrink for mobile */
+    
+    .banner {
+        max-height: 250px;
     }
 }
 
-/* --- Restore Buy Button --- */
-.buy-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 15px;
-    font-size: 16px;
-    background: #FFD700;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.buy-button:hover {
-    background: #800080;
-    color: white;
-}
-
-/* --- Footer Styling (Updated Social Media Links) --- */
-footer {
-    background: linear-gradient(to right, #6a0dad, #FF7F50);
-    color: white;
-    padding: 20px;
+/* --- Footer Styling (Purple Footer) --- */
+.footer {
+    background-color: rgba(75, 0, 130, 0.9);
+    padding: 15px;
     margin-top: 20px;
 }
 
-footer p {
-    font-size: 16px;
-}
-
-.social-links {
-    list-style: none;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.social-links li a {
+.footer a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
     color: #FFD700;
-    font-size: 18px;
-}
-
-.social-links li a:hover {
-    color: #fff;
-}
-
-/* --- Fix Footer Position --- */
-@media screen and (max-width: 600px) {
-    footer {
-        padding: 15px;
-    }
 }
