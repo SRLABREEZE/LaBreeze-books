@@ -52,3 +52,40 @@ body {
 .footer a:hover {
     color: #BEBEBE;
 }
+
+/* --- FOOTER STYLE --- */
+.footer {
+    background: rgba(75, 0, 130, 0.9);
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.footer a:hover {
+    color: #B0B0B0;
+}
+
+/* --- SOCIAL MEDIA LINKS --- */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #B0B0B0;
+}
