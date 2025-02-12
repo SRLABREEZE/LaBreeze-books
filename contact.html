@@ -7,62 +7,41 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="nfts.html">NFTs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
     <header>
-        <img src="assets/images/banner.jpg" alt="LaBreeze Books Banner" class="banner">
         <h1>Contact S R LaBreeze</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="nfts.html">NFTs</a></li>
-                <li><a href="about.html">About the Author</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <p>Have questions? Get in touch.</p>
     </header>
 
-    <section class="contact-info">
-        <h2>Get in Touch</h2>
-        <p>Have questions, feedback, or business inquiries? Reach out to S R LaBreeze!</p>
-        <p>Email: <a href="mailto:srlabreeze@gmail.com">srlabreeze@gmail.com</a></p>
-    </section>
-
     <section class="contact-form">
-        <h2>Send a Message</h2>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <label for="name">Name:</label>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
+
+            <label for="email">Your Email:</label>
             <input type="email" id="email" name="email" required>
-            
+
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
+            <textarea id="message" name="message" rows="4" required></textarea>
+
             <button type="submit">Send</button>
         </form>
     </section>
-<!-- Correct Banner Image -->
-<img src="assets/images/banner.jpg" alt="LaBreeze Books Banner" class="banner">
 
-<!-- Correct Book Images -->
-<div class="book-item">
-    <img src="assets/images/keep-it-playa.png" alt="Keep It Playa">
-</div>
-<div class="book-item">
-    <img src="assets/images/project-nova-placeholder.png" alt="Project Nova">
-</div>
-<div class="book-item">
-    <img src="assets/images/spelman-high-placeholder.png" alt="Spelman High">
-</div>
-    <footer>
-        <p>Follow S R LaBreeze on social media:</p>
-        <ul class="social-links">
-            <li><a href="https://www.facebook.com/srlabreeze" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/srlabreeze" target="_blank">Instagram</a></li>
-            <li><a href="https://www.tiktok.com/@srlabreeze" target="_blank">TikTok</a></li>
-            <li><a href="https://twitter.com/srlabreeze" target="_blank">Twitter/X</a></li>
-        </ul>
+    <footer class="footer">
+        <p>Follow Me:  
+            <a href="https://facebook.com/srlabreeze">Facebook</a> | 
+            <a href="https://instagram.com/srlabreeze">Instagram</a> | 
+            <a href="https://tiktok.com/@srlabreeze">TikTok</a> | 
+            <a href="https://twitter.com/srlabreeze">Twitter</a>
+        </p>
     </footer>
 </body>
 </html>
