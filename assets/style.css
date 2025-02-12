@@ -1,40 +1,45 @@
-/* Reset Styles */
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #4b0082, #ffb6c1); /* Purple to Peach Gradient */
+    background: #1a1a1a;
     color: white;
     margin: 0;
     padding: 0;
 }
 
-/* NAVBAR */
+/* Navbar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
     text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar a {
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
+    font-size: 16px;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s ease-in-out;
 }
 
 .navbar a:hover {
     color: #ffb6c1;
 }
 
-/* HEADER */
-header {
-    text-align: center;
-    padding: 20px;
-    font-size: 28px;
-    font-weight: bold;
+/* Banner */
+.banner {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
-/* GRID LAYOUT FOR CARDS */
+/* Book & NFT Cards */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -43,86 +48,72 @@ header {
     padding: 20px;
 }
 
-/* CARD DESIGN */
 .card {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
     width: 280px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .card img {
     width: 100%;
-    border-radius: 5px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.card h3 {
-    font-size: 18px;
-    margin-top: 10px;
+/* Buttons */
+.button {
+    background: #ffb6c1;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
 }
 
-.card p {
-    font-size: 14px;
-    color: #ffb6c1;
+.button:hover {
+    background: #e098a6;
 }
 
-/* AUTHOR SECTION */
-.author-bio {
+/* Author Section */
+.author-section {
     text-align: center;
     padding: 40px;
 }
 
 .author-img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     border: 3px solid white;
 }
 
-/* CONTACT FORM */
-.contact-form {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    margin: auto;
-    text-align: center;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #ffb6c1;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-background: url('https://srlabreeze.github.io/LaBreezeBooks-web/assets/images/banner.jpg') no-repeat center center;
-background: url('assets/banner.jpg');
-}
-.contact-form button:hover {
-    background-color: #d87093;
-}
-
-/* FOOTER */
+/* Footer */
 .footer {
     text-align: center;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner {
+        height: auto;
+    }
 }
