@@ -1,16 +1,31 @@
 /* --- GENERAL STYLES --- */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #4B0082, #6A6A6A); /* Deep Purple to Gray */
+    background: linear-gradient(to bottom, #4B0082, #505050); /* Deep Purple to Dark Gray */
     color: white;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* --- NAVIGATION BAR FIX (DARK PURPLE) --- */
+/* --- HEADINGS --- */
+h1, h2, h3 {
+    color: #FFD700; /* Gold for contrast */
+}
+
+/* --- LINKS --- */
+a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #B0B0B0; /* Light Gray Hover Effect */
+}
+/* --- NAVIGATION BAR --- */
 .navbar {
-    background: rgba(75, 0, 130, 0.95); /* Deep Purple */
+    background: rgba(75, 0, 130, 0.95); /* Dark Purple */
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -19,7 +34,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    box-shadow: 0px 4px 10px rgba(169, 169, 169, 0.3); /* Soft Gray Glow */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
 
 .navbar a {
@@ -32,63 +47,32 @@ body {
 }
 
 .navbar a:hover {
-    color: #D3D3D3; /* Light Gray Hover Effect */
-}
-
-/* --- FOOTER FIX (GRAY TONE) --- */
-.footer {
-    background: rgba(106, 106, 106, 0.9); /* Dark Gray */
-    padding: 20px;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer a:hover {
-    color: #BEBEBE;
-}
-
-/* --- FOOTER STYLE --- */
-.footer {
-    background: rgba(75, 0, 130, 0.9);
-    padding: 20px;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-}
-
-.footer a:hover {
     color: #B0B0B0;
 }
 
-/* --- SOCIAL MEDIA LINKS --- */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
+/* --- MOBILE MENU FIX --- */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    }
+/* --- BANNER IMAGE --- */
+.banner-container {
+    margin-top: 80px;
 }
 
-.social-icons a {
-    color: white;
-    font-size: 24px;
-    transition: color 0.3s ease;
+.banner {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.social-icons a:hover {
-    color: #B0B0B0;
-}
-body {
-    background: linear-gradient(to bottom, #4B0082, #505050); /* Deep Purple to Dark Gray */
+/* --- MOBILE BANNER FIX --- */
+@media screen and (max-width: 768px) {
+    .banner {
+        max-height: 200px;
+    }
 }
