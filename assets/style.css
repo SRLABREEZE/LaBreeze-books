@@ -1,86 +1,126 @@
-/* --- GENERAL STYLES --- */
+/* Reset Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #4B0082, #505050);
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #4b0082, #ffb6c1); /* Purple to Peach Gradient */
     color: white;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
-/* --- NAVIGATION BAR --- */
+/* NAVBAR */
 .navbar {
-    background: rgba(75, 0, 130, 0.95);
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: center;
 }
 
 .navbar a {
     color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 18px;
     font-weight: bold;
-    padding: 12px;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 .navbar a:hover {
-    color: #B0B0B0;
+    color: #ffb6c1;
 }
 
-/* --- AUTHOR PAGE --- */
-.author-bio {
-    margin: 60px auto;
-    max-width: 600px;
+/* HEADER */
+header {
     text-align: center;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.author-img {
-    width: 100%;
-    max-width: 200px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-/* --- NFT PAGE --- */
-.nft-list {
+/* GRID LAYOUT FOR CARDS */
+.card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
     padding: 20px;
 }
 
-.nft-card {
-    width: 220px;
+/* CARD DESIGN */
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 280px;
     text-align: center;
+    transition: transform 0.3s;
 }
 
-.nft-card img {
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
     width: 100%;
     border-radius: 5px;
 }
 
-/* --- MOBILE RESPONSIVENESS --- */
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-    .author-img {
-        max-width: 150px;
-    }
-    .nft-card {
-        width: 160px;
-    }
+.card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ffb6c1;
+}
+
+/* AUTHOR SECTION */
+.author-bio {
+    text-align: center;
+    padding: 40px;
+}
+
+.author-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ffb6c1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #d87093;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
