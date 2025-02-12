@@ -113,7 +113,9 @@ header {
     font-weight: bold;
     cursor: pointer;
 }
-
+background: url('https://srlabreeze.github.io/LaBreezeBooks-web/assets/images/banner.jpg') no-repeat center center;
+background: url('assets/banner.jpg');
+}
 .contact-form button:hover {
     background-color: #d87093;
 }
