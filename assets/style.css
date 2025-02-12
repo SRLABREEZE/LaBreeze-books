@@ -89,3 +89,6 @@ body {
 .social-icons a:hover {
     color: #B0B0B0;
 }
+body {
+    background: linear-gradient(to bottom, #4B0082, #505050); /* Deep Purple to Dark Gray */
+}
