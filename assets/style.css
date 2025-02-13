@@ -10,110 +10,40 @@ body {
 /* Navbar */
 .navbar {
     background: rgba(0, 0, 0, 0.8);
+    text-align: centebody {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #3f2b96, #a8c0ff);
+    color: #fff;
     text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
-.navbar a {
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar a:hover {
-    color: #ffb6c1;
-}
-
-/* Banner */
-.banner {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-}
-
-/* Book & NFT Cards */
-.card-container {
+nav ul {
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    padding: 10px;
+    background: #222;
 }
 
-.card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-    width: 280px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+nav ul li {
+    margin: 0 15px;
 }
 
-.card:hover {
-    transform: scale(1.08);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Buttons */
-.button {
-    background: #ffb6c1;
-    color: black;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    display: inline-block;
-    transition: background 0.3s ease-in-out;
-}
-
-.button:hover {
-    background: #e098a6;
-}
-
-/* Author Section */
-.author-section {
-    text-align: center;
-    padding: 40px;
-}
-
-.author-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 3px solid white;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.9);
+nav ul li a {
     color: white;
-    font-size: 14px;
+    text-decoration: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .banner {
-        height: auto;
-    }
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+    margin: 10px;
+    display: inline-block;
+}
+
+footer {
+    background: #111;
+    padding: 10px;
 }
