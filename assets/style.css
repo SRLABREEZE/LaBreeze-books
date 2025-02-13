@@ -6,7 +6,24 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.book-card img {
+    max-width: 100%;
+    height: auto;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    background: #222;
+    padding: 10px;
+}
+nav ul li {
+    margin: 0 15px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #111;
+}
 /* Navbar */
 .navbar {
     background: rgba(0, 0, 0, 0.8);
