@@ -11,3 +11,10 @@ The official website for INDYARTZ, the ultimate artist hub.
 
 ## 🔹 Setup
 1. Clone the repo:
+2. Open `index.html` in a browser.
+
+## 🔹 Deployment
+- Free Hosting: [GitHub Pages](https://pages.github.com/)
+- Firebase Hosting (Optional)
+
+---
